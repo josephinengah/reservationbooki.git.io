@@ -1,0 +1,468 @@
+
+/* This is Universal Box Sizing with Inheritance */
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+html {
+    box-sizing: border-box;
+  }
+b{
+  font-weight: bold;
+}  
+
+/* Font family*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Raleway:wght@100&display=swap');
+
+body{
+  font-family: 'Raleway', sans-serif;
+  width: 100%;
+}
+
+/***************** Barre de NAVIGATION  ********************/  
+header{
+  width: 100%;
+}
+
+/***************** Barre de NAVIGATION  ********************/  
+
+/* Conteneur menu du menu de navigation et logo*/
+.navbar{
+  display: flex;
+  justify-content :space-between;
+  margin-right: 3%;
+}
+
+ /* Repositionement du logo*/
+ .navbar img {
+  width:60Px;
+  height: 20px;
+  margin-left: 3%;
+  margin-top: 2.8%;
+ }
+/*Apparence liens du menu header*/
+a{
+  text-decoration: none;
+  color: black;
+
+}
+
+/*Space between the header nav links*/
+.hebergementnav{
+ 
+margin-right: 10%;
+
+}
+nav ul{
+  display: flex;
+  list-style: none;}
+nav li{
+  padding: 1.1rem;
+}
+
+/* mouse over link blue bar at the bottom of the nav menu elements*/
+nav a:hover
+{border-top:2px solid #0065FC;
+  position:relative;
+  padding-top:37px; }
+
+h1{
+
+  font-size: 2.1vw;
+  margin-left: 2%;
+  margin-top: 2.4%;
+}
+/* position du sous titre h1 et taille de police*/
+.P-header{
+font-size: 1rem;
+margin-left: 2%;
+}
+/* position du header et taille de police*/
+
+ 
+
+/**************** DEBUT FORMULAIRE RECHERCHE ******************/ 
+
+/*Positionement et marge du formulaire */
+form{
+  display: flex;
+  width: 40%;
+  height: 3rem;
+  margin-left:2%;
+}
+
+/*Icon localisation du Formulaire de recherche*/
+i.fa-solid.fa-location-dot.fa-sm{ 
+  
+  background:#F2F2F2;
+  border-radius: 9px 0px 0px 9px;
+  width: 10%;
+  padding-left: 2.5%;
+  padding-top: 4%;
+  font-size: 21px;
+}
+
+/*Espace entrée des données du Formulaire de recherche*/
+input {
+ 
+  border:1px solid #F2F2F2;
+  font-size: 22px;
+  padding-left: 3%;
+  color: black;
+  width: 46%;
+  font-size: 22px;
+}
+::placeholder { 
+  color:black;
+  opacity: 1;
+  width: 100%;
+  font-size: 1rem;
+}
+
+/*Bouton de recherche du Formulaire */
+button{
+
+  color:white;
+  border-radius:0px 15px 15px 0px ;
+  border-color:transparent;
+  background:#0065FC;
+  font-size: 0.9rem;
+  height:100%;
+  width: 25%;
+ }
+
+ .visible p{
+  margin-bottom: 9%;
+ }
+  
+
+/**************** FIN DU FORMULAIRE RECHERCHE ******************/ 
+
+
+
+/******** FILTRES **********/ 
+
+/* Conteneur Titre filtres et icon */
+.filtres{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left:2%;
+ }
+.filtres h2{
+  padding-top: 1.27rem;
+  font-size: 1.2rem;
+}
+
+/* Titre filtres */
+
+
+/* icones du filtres*/
+i.fa-money-bill-wave, i.fa-child-reaching,i.fa-heart,i.fa-dog
+{
+  border: 0.8rem transparent solid;
+  color:#0065FC;
+  border-radius: 50%;
+}
+/* padding filtresze, font si*/
+span b{
+  padding: 1.1rem;
+  }
+/* icones du filtres*/
+.icon-border{
+border:3px solid #F2F2F2;
+border-radius: 2.3rem;
+margin:1.6rem;
+
+}
+/* animation des icones, changement de couleur*/
+.icon-border:hover{
+  background-color:#DEEBFF;
+  transition: 0.3s;
+}
+/******** INFORMATION SOUS FORMULAIRE*******/
+/*Icone infos */
+i.fa-circle-info
+{
+  background-color: blue;
+  color:white;
+  border-radius: 80%;
+  margin-top: 1%;
+ 
+}
+
+
+
+/*Indication disponibilité des logements sous Formulaire de recherche */
+.sous-form{
+  margin-left: 3%;
+  margin-bottom:1.2%;
+  font-size: 1.1rem;
+}
+/****************** FIN DU FILTRES ET INFORMATION SOUS FORMULAIRE  ********************/
+
+
+/* Star icons color*/
+.blue-color{
+  color: #0065FC;
+}
+.gray-color{
+  color:lightgray;
+}
+
+/****************** SECTION HÉBÈRGEMENTS********************/ 
+#Hébèrgements{
+  display:flex;
+  flex-direction:row-reverse;
+  justify-content: space-around;
+  padding:2%;
+}
+
+<!--SECTION HEBERGEMENTS ET LES PLUS POPULAIRES-->
+.block-hébèrgements h2{
+   margin-right: 3%;
+   padding-top: 2%;
+   font-size: large; 
+ 
+}
+
+#Hébèrgements p{
+  font-size: 92%;
+}
+
+
+/************************ conteneur du block "les plus populaires" ************************/
+.block-populaire{
+  width:29%;
+  height: auto;
+  display: flex;
+  flex-flow: column;
+  padding-right: 4%;
+  background-color: #F2F2F2;
+  border-radius: 3%;
+  margin-right: 1%;
+  margin-left: 2%;
+ 
+}
+/*Paramètre du titre du block populaire*/
+
+.block-populaire h2{
+  width: 100%;
+  font-size: 1.3vw;
+  display: flex;
+  margin-left: 7%;
+  margin-top: 9%;
+}
+
+h2 i{
+ color: #0065FC;
+ padding-left: 40%;}
+
+/* Carte populaire*/
+
+.block-populaire a { 
+
+  display: flex;
+  border-radius:1.2rem;
+  background-color:white;
+  width: 103%;
+  height: 22%;
+  margin:7%;
+  margin-left: 6%;
+  margin-top: 6%;
+  box-shadow: 1px 2px 2px 1px lightgray;
+  
+}
+
+.block-populaire a:hover{
+  color:blue ;
+opacity:30%;
+position: relative;
+}
+.block-populaire img {
+box-sizing: border-box;  
+margin-right:3%;
+width: 40%;
+border-radius:1.1rem 0rem 0rem 1.1rem;  
+padding:1%;
+object-fit: cover;
+}
+.imgpop3 img{
+  height: 99%;
+  width: 40%;
+}
+.imgpop3{
+  width: 93%;
+  height:34%; 
+}
+.etoilepop {
+  display:flex;
+  margin-top: 33%;
+
+}
+
+.etoilepop2 {
+  display:flex;
+  margin-top:20%;
+
+}
+
+.etoilepop3 {
+ padding-top: 30%;
+}
+/* Dimensions Photo carte populaire*/
+
+
+
+  /* Animation carte populaire*/
+.carte-populaire img:hover{
+    opacity: 0.3;
+  }
+
+.afficher-plus{
+  
+  margin-right: 48%;
+  margin-bottom: 5%;
+  font-size: large;
+  font-weight: bolder;
+}
+/****************************** conteneur du block hébèrgements******************************/
+.block-hébèrgements{
+  width: 66%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #F2F2F2;
+  border-radius:3%;
+  }
+
+/* Dimensions des photos du block hébrgements*/
+
+.block-hébèrgements img {
+  width: 99%;
+  border-radius:1.7rem 1.7rem 0rem 0rem;
+  padding:2%;
+  padding-left: 2.5%;
+  padding-top: 3%;
+}
+/* Effets overlay carte hébrgements*/
+.carte-hébèrgements img:hover{
+
+  opacity: 0.3;
+} 
+.block-hébèrgements a{
+  display: inline-block;
+  margin:2%;
+  margin-left: 2.5%;
+  background-color: white;
+  border-radius: 1.6rem ;
+  width:28%;
+  box-shadow: 1px 2px 1px 2px lightgrey;
+  cursor:pointer
+}
+.block-hébèrgements a:hover{
+  color:blue ;
+opacity:30%;
+position: relative;
+}
+
+.block-hébèrgements h2{
+ margin-left: 3%; 
+ font-size: 1.4vw;
+ margin-top:3% ;
+}
+.block-hébèrgements p 
+{margin-left: 6%;
+ margin-top: 0%;
+}
+
+.etoile-note
+{margin-left: 5%;
+margin-bottom: 4%;}
+
+
+
+/******************************SECTION ACTIVITES À MARSEILLE******************************/
+
+/* Section activite à Marseille*/
+#Activités{
+  margin-right:3%;
+}
+
+/* Titre section activite à Marseille*/
+#Activités h2{
+ font-size:large;
+ margin-top: 3%;
+ margin-bottom: 0%;
+ margin-left:3%;
+}
+#Activités p{
+  margin-left: 5%;
+}
+
+/*Conteneur cartes activités à Marseille*/
+.block-activites
+{width: 100%;
+display: flex;
+}
+.block-activites h2{
+  width: 100%;
+  font-size:large; 
+}
+/* paramètre photo d'activité à Marseille  1 et 4*/
+.carte-activité-xl img{
+width: 100%;
+border-radius:4% 4% 0% 0%;
+object-fit: cover;
+
+}
+
+/* Carte légende des activitéés à Marseille photo 1 et 4 */
+.carte-activité-xl
+{
+border-radius:4%;
+width:35%;
+margin-top:2%;
+box-shadow: 1px 2px 2px 1px lightgray;
+margin:1%;
+margin-bottom:4%;
+margin-left: 3%;
+}
+
+
+.carte-activité-xl img:hover
+{ color:blue ;
+  opacity:30%;
+  position: relative;}
+/******************************FOOTER******************************/
+
+footer ul
+{
+  flex-direction: column;
+  list-style: none;
+
+}
+
+footer
+{ display:flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  left: 0;
+  bottom:0; 
+  width:93%;
+  background-color: #F2F2F2;
+  margin-left: 3%;}
+ 
+footer a{
+  line-height: 35px;
+  width: 23%;
+  margin-right: 8%;
+  padding:0%;
+}
+
+.block-footer{
+  margin-right: 15%;
+}
+
+
+
+
