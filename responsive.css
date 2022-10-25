@@ -62,6 +62,9 @@ nav a:hover:after {
   border-top:none;
  
 }
+#text{
+  display:none;
+}
 /* mouse over link blue bar at the bottom of the nav menu elements*/
 
 
@@ -91,8 +94,12 @@ position:relative;
   margin-left: 2%;
   
 }
+.filtres a{
+  font-size: 3vw;
+}
 span b{
   padding:0%;
+  font-size: 3.8vw;
 }
 /*Sous titre formulaire de recherche*/
 .P-header{
@@ -114,7 +121,7 @@ form i{
   width: 15%;
   padding-top: 5%;
   background:#F2F2F2;
-  border-radius: px 0px 0px 15px;
+  border-radius: 0% 0% 0% 15%;
  }
 /*Espace entrée des données du Formulaire de recherche*/
 input {
@@ -126,13 +133,10 @@ input {
   padding-left: 3%;
   color: lightgrey;
   }
-  ::placeholder {
-
-   
-  }
+  
   i.fa-solid.fa-location-dot.fa-sm{background:#F2F2F2;
     padding-left: 5%;
-    padding-top: 6%;
+    padding-top: 4%;
     width: 15%;
     border-radius: 15px 0px 0px 15px;
  }
@@ -162,8 +166,9 @@ button::before{
   font: var(--fa-font-solid);
   content: "\f002";
 }
-.visible p{
+button text{
 font-size: 0px;
+
 }
 
 h2{
@@ -172,9 +177,8 @@ h2{
 }
 .icon-border{
   margin: 0.3rem;
-  width: 11rem;
-  
-  padding: 2%;
+  width: 45vw;
+  padding: 0;
 }
 
 fa-solid fa-money-bill-wave{
@@ -200,12 +204,28 @@ fa-solid fa-money-bill-wave{
   margin-left: 2%;
  
 }
+.block-populaire a{
+  height: 30vw;
+}
 .block-populaire img{
   height: auto;
 }
+.block-populaire h2{
+  font-size: 5vw;
+  margin-left: 3%;
+}
+.etoilepop{
+  margin-top: 20%
+}
+.etoilepop2{
+  margin-top: auto;
+}
+.etoilepop3{
+  padding-top: 13%;
+}
 .imgpop3 img{
-  width: 45%;
-  height: 170px;
+  width: 40%;
+  height: 120px;
 }
 .imgpop3{
 
@@ -230,11 +250,17 @@ background-size: cover;}
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  margin-right: 14%;
  
 }
+.block-hébèrgements a{
+  width: 85vw;
+  margin-right: 0;
+  margin-left: 0;
+}
 .block-hébèrgements img{
-  height: 8rem;
-  width: 20em;
+  width: 85vw;
+  height: 40vw;
   border-radius: 1.7rem 1.7rem 0rem 0rem;
   object-fit: cover;
 }
@@ -251,7 +277,9 @@ background-size: cover;}
   border-radius: 5% 5% 5% 5%;
 
 }
-
+.block-hébèrgements h2{
+  font-size: 4.8vw;
+}
 
 .block-populaire{
   margin-left: 1%;
@@ -263,9 +291,7 @@ background-size: cover;}
   border-radius: 0%;
 
 }
-.block-populaire fa-solid fa-star {
-  
-}
+
 .carte-populaire {
   display: flex;
   width: 90%;
@@ -299,9 +325,9 @@ background-size: cover;}
 }
  /* Carte Activités à Marseille*/
 .carte-activité-xl, .small-card-activity, .card-activite-bottom{
-    border-radius: 6%;
-    width: 210px;  
-    height: 110px;
+  border-radius: 4%;
+  width: 80vw;
+  height: 40vw;
     box-shadow: 1px 2px 2px 1px lightgrey;
     margin: 3%;
 }
@@ -309,8 +335,8 @@ background-size: cover;}
 .carte-activité-xl img, .small-card-activity, .card-activite-bottom {
   display: flex;
   flex-direction: column;
-  width: 210px;
-  height: 100px;
+  width: 100%;
+  height: 70%;
   border-radius: 5% 5% 0% 0%;
 }
 
@@ -322,6 +348,8 @@ footer {
   width: 100%;
 
 }
+footer a{    font-size: 4vw;
+width: 100%;}
 }
 
 /****************************** tablets******************************/
@@ -368,13 +396,20 @@ i.fa-solid.fa-location-dot.fa-sm{
 
   }
   .icon-border{
-    margin: 1rem;
+    margin: 0.5vw;
+  }
+  .spanbox{
+    width: 100%;
   }
 
   .block-populaire{
     width:100%;
     flex-direction: row;
     margin-top: 5%;
+    width: 100%;
+    flex-direction: row;
+    margin-left: 0;
+    margin-left: 0;
   }
 
   .block-populaire a {
@@ -393,6 +428,9 @@ i.fa-solid.fa-location-dot.fa-sm{
     width:100%;
     font-size: 88%;
   }
+  .block-populaire img{
+    width:50%;
+  }
   
   .block-populaire h2{
     font-size: 2.3vw;
@@ -410,7 +448,24 @@ i.fa-solid.fa-location-dot.fa-sm{
   .etoilepop {
     display: flex;
     margin-top: 3vw;
+    margin-top: 20%;
 }
+.carte-activité-xl img {
+
+  height: 65%;
+  
+}
+#text{
+color:red
+ }
+#Activités {
+  margin-right: 1%;
+}
+footer li{
+  font-size: 1.4Vw;
+}
+
+
   }
 
  /****************************** laptop******************************/

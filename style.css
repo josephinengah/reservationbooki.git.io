@@ -308,7 +308,7 @@ object-fit: cover;
 }
 
 .etoilepop3 {
- padding-top: 30%;
+ padding-top: 20%;
 }
 /* Dimensions Photo carte populaire*/
 
@@ -322,7 +322,7 @@ object-fit: cover;
 .afficher-plus{
   
   margin-right: 48%;
-  margin-bottom: 5%;
+  margin-top:13%;
   font-size: large;
   font-weight: bolder;
 }
