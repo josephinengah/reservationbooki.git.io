@@ -166,8 +166,8 @@ button::before{
   font: var(--fa-font-solid);
   content: "\f002";
 }
-button text{
-font-size: 0px;
+button p{
+display: none;
 
 }
 
